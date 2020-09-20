@@ -1,0 +1,15 @@
+body,
+html {
+  font-family: $font-family;
+  background-color: $grey;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  max-width: 1200px;
+  min-width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}

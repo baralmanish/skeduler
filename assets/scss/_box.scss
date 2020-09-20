@@ -1,0 +1,48 @@
+.box {
+  box-shadow: none;
+  border: 1px solid #d5d5d5;
+
+  .box-title {
+    color: $text-black;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d5d5d5;
+
+    &:first-child {
+      border-top: none;
+    }
+    
+    .title {
+      position: relative;
+      padding-left: 17px;
+      @extend %noselect;
+      font-size: 14px;
+      height: 35px;
+      line-height: 35px;
+      margin-left: 5px;
+      cursor: pointer;
+
+      i {
+        position: absolute;
+        left: 0;
+        font-size: 16px;
+        top: 0;
+        height: 34px;
+        line-height: 34px;
+        opacity: 0.5;
+      }
+    }
+
+  }
+
+  .box-body {
+    padding: 0;
+    background: $grey;
+    max-width: 100%;
+    max-height: 350px;
+    overflow: auto;
+    position: relative;
+  }
+}

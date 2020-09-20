@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+$font-family: 'Montserrat', sans-serif;
+
+// colors
+$white: #ffffff;
+$grey: #f5f6fa;
+$black: #000000;
+$text-black: #343434;
+$light-black: #9fa3b5;
+$blue: #3751fe;
+$orange: #fe5e07;
+$green: #00c769;
+$yellow: #ffba11;
+$red: #ff0000;
+$pink: #ef4364;
+
+%noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@for $i from 0 through 2000 {
+  $gap_size: #{$i};
+
+  .active-after-left-#{$gap_size} {
+    &::after {
+      left: #{$gap_size}px !important;
+    }
+  }
+
+  .active-after-height-#{$gap_size} {
+    &::after {
+      height: #{$gap_size}px !important;
+    }
+  }
+}
